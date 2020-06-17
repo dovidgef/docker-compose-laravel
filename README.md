@@ -16,6 +16,15 @@ Containers created and their ports (if used) are as follows:
 Create new Laravel project using Composer 
 `docker-compose exec php composer create-project --prefer-dist laravel/laravel src`
 
+Update Laravel .env file to match docker-compose configuration
+```bash
+APP_URL=http://localhost:8080
+DB_HOST=db
+DB_DATABASE=homestead
+DB_USERNAME=homestead
+DB_PASSWORD=secret
+```
+
 Run Artisan commands
 `docker-compose exec php php src/artisan migrate`
 

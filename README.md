@@ -16,6 +16,12 @@ Containers created and their ports (if used) are as follows:
 Create new Laravel project using Composer 
 `docker-compose exec php composer create-project --prefer-dist laravel/laravel src`
 
+Alternatively you can clone your existing Laravel application
+```bash
+# Switch into php/ directory then run:
+git clone git@github.com:username/laravel-project.git src
+```
+
 Update Laravel .env file to match docker-compose configuration
 ```bash
 APP_URL=http://localhost:8080
